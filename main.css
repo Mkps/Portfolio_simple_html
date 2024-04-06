@@ -1,0 +1,16 @@
+html {
+}
+body {
+    font-size: 22px;
+    background-color: #222;
+    color:whitesmoke;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-style: italic;
+    color: whitesmoke;
+}
+#second {
+    font-style: italic;
+}
