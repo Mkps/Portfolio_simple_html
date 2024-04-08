@@ -1,11 +1,42 @@
-body {
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+} 
+ body {
     font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.5;
     background-color: #222;
     color:whitesmoke;
+    min-height: 100vh;
+
 }
 
 h1 {
+    border: 2px dashed;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 3rem;
     text-transform: uppercase;
-    font-style: italic;
     color: whitesmoke;
 }
+
+#HEADER_CONTAINER {
+    display: grid;
+    height: 100px;
+    grid-template-columns: repeat(3. 1fr);  
+}
+
+  #gi2 {
+    grid-column: 2/3;
+  }
+  
+  #gi3 {
+    grid-column:  3/3;
+  }
