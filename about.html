@@ -1,98 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="aloubier">
-        <meta name="description" content="Learn more about me!">
-        <title>About - Alexis Loubiere - Inception</title>
-        <link rel="icon" href="42_Logo.svg" type="image/svg+xml">
-        <link rel="stylesheet" href="main.css" type="text/css">
-        <script src="https://unpkg.com/htmx.org@1.9.11"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="name">
-                <a href="index.html">Alexis Loubiere</a>
-                <p>Student @42Paris</p>
-            </div>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="42.html">42</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h1><strong>About Me</strong></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="aloubier" />
+    <meta name="description" content="Learn more about me!" />
+    <title>About - Alexis Loubiere - Inception</title>
+    <link rel="icon" href="42_Logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="name">
+        <a href="index.html">Alexis Loubiere</a>
+        <p>Student @42Paris</p>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="42.html">42</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="page-title">
+        <h1><strong>About</strong></h1>
         <p>A short summary of who I am and what I can do</p>
-        <hr>
-        <h2>Who am I?</h2>
-        <p>My name is Alexis and I am currently studying at 42Paris.
-            <br>I was previously a 
-            <br>My interests are cybersecurity and application programming. I don't dislike devops either.
-            <br>I like gaems.
-        </p>
-        <hr>
-        <h2>Skills</h2>
-        <ul>
-            <li>Strong proficiency in C</li>
-            <li>Learning C++</li>
-            <li>Exprerienced with python</li>
-            <li>HTML/CSS with HTMX dynamic elements</li>
-            <li>Master of GTK</li>
-        </ul>
-        <h2>Current projects</h2>
-        <ul>
-            <li>C++ exam</li>
-            <li>C++ Modules</li>
-            <li>Inception</li>
-            <li>Webserv</li>
-        </ul>
-        <hr>
-        <article id="contact">
-            <h2>Contact Me</h2>
-            <p>Looking forward to hearing from you</p>
-            <form action="https://httpbin.org/get"
-            method="get">
-            <fieldset>
-                <legend>&nbsp;Contact&nbsp;</legend>
-            <p>
-                <label for="firstName">First Name:</label>
-                <input type="text" name="firstName"
-                id="firstName" placeholder="First Name" autocomplete="off" required>
-            </p>
-            <p>
-                <label for="lastName">Last Name:</label>
-                <input type="text" name="lastName"
-                id="lastName" placeholder="Last Name" autocomplete="off" required>
-            </p>
-            <p>
-                <label for="mailAddress">Mail address</label>
-                <input type="text" name="mailAddress"
-                id="mailAddress" placeholder="address@example.com" autocomplete="off" required>
-            </p>
-            <button type="submit">Submit</button>
-            </fieldset>
-            </form>
-        </article>
-        <hr>
-        <footer class="footer">
-            <div>
-                <p>Email</p>
-                <p>alex.loubiere[at]gmail.com</p>
-            </div>
-            <div>
-                <p>Intra</p>
-                <p>alex.loubiere[at]gmail.com</p>
-            </div>
-            <div>
-                <p>Github</p>
-                <p>alex.loubiere[at]gmail.com</p>
-            </div>
-            <div>
-                <p>&lt;&copy; Alexis LOUBIERE &gt;</p>
-            </div>
-        </footer>
-    </body>
- </html>
+    </section>
+    <hr />
+    <div class="projects">
+      <h2>Who am I?</h2>
+      <p>
+        My name is Alexis and I am currently studying at 42Paris. <br />I was
+        previously a <br />My interests are cybersecurity and application
+        programming. I don't dislike devops either. <br />I like gaems.
+      </p>
+    </div>
+    <hr />
+    <div class="projects">
+      <h2>Skills</h2>
+      <ul>
+        <li>Strong proficiency in C</li>
+        <li>Learning C++</li>
+        <li>Exprerienced with python</li>
+        <li>HTML/CSS with HTMX dynamic elements</li>
+        <li>Master of GTK</li>
+      </ul>
+      <h2>Current projects</h2>
+      <ul>
+        <li>C++ exam</li>
+        <li>C++ Modules</li>
+        <li>Inception</li>
+        <li>Webserv</li>
+      </ul>
+    </div>
+    <hr />
+    <article id="contact">
+      <h2>Contact Me</h2>
+      <p>Looking forward to hearing from you</p>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>&nbsp;Contact&nbsp;</legend>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+              autocomplete="off"
+              required
+            />
+          </p>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last Name"
+              autocomplete="off"
+              required
+            />
+          </p>
+          <p>
+            <label for="mailAddress">Mail address</label>
+            <input
+              type="text"
+              name="mailAddress"
+              id="mailAddress"
+              placeholder="address@example.com"
+              autocomplete="off"
+              required
+            />
+          </p>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </article>
+    <hr />
+    <footer class="footer">
+      <div>
+        <p>Email</p>
+        <p>alex.loubiere[at]gmail.com</p>
+      </div>
+      <div>
+        <p>Intra</p>
+        <p>alex.loubiere[at]gmail.com</p>
+      </div>
+      <div>
+        <p>Github</p>
+        <p>alex.loubiere[at]gmail.com</p>
+      </div>
+      <div>
+        <p>&lt;&copy; Alexis LOUBIERE &gt;</p>
+      </div>
+    </footer>
+  </body>
+</html>
