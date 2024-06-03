@@ -131,6 +131,43 @@
     margin-left: 4em;
     font-size: 0.9em;
 }
+
+.resume {
+    padding: 20px;
+    padding-left: 2%;
+}
+.resume h3 {
+    text-decoration-line: underline;
+}
+.resume .content{
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Two columns: fixed width for dates, flexible width for content */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+    padding-left: 5%;
+}
+
+.resume .content .date {
+    font-weight: bold; /* Bold dates */
+}
+
+.resume .content .item {
+    display: flex;
+    flex-direction: column; /* Stack text items vertically */
+}
+
+.resume .content .item-title {
+    font-size: 1.2em; /* Larger font for titles */
+    margin: 0; /* Remove default margin */
+}
+
+.resume .content .item-description {
+    font-size: 0.9em; /* Smaller font for descriptions */
+    font-style: italic; /* Italic text */
+    margin: 5px 0 0 0; /* Small margin at the top */
+    color: #666; /* Optional: Lighter color for descriptions */
+}
+
 @media (max-width: 600px) {
     .img-container {
         flex-direction: column;
