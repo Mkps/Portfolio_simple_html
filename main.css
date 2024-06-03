@@ -69,14 +69,13 @@ body {
 }
 
 .footer .link {
-    margin-left: 5%;
-    color: #3c1da0;
-    font-size: 1em;
+  margin-left: 5%;
+  color: #3c1da0;
+  font-size: 1em;
 }
 
 .footer a {
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 .img-container {
@@ -177,12 +176,12 @@ body {
   color: #666; /* Optional: Lighter color for descriptions */
 }
 .skills ul {
-    text-align: left;
-    list-style: armenian;
-    margin-left: -2%;
-    font-size: 1em;
-  }
-  
+  text-align: left;
+  list-style: armenian;
+  margin-left: -2%;
+  font-size: 1em;
+}
+
 .about {
   width: 80%;
   margin: 20px auto;
@@ -210,8 +209,8 @@ body {
 }
 
 .contact fieldset {
-    text-align: left;
-    background-color: whitesmoke;
+  text-align: left;
+  background-color: whitesmoke;
 }
 
 .contact legend {
@@ -220,7 +219,6 @@ body {
   font-size: 20px;
   text-transform: capitalize;
 }
-
 
 .contact form div {
   padding: 5px;
@@ -235,7 +233,7 @@ body {
 }
 
 .contact input {
-    margin: 5px;
+  margin: 5px;
 }
 .contact button {
   margin: 4px 2px;
