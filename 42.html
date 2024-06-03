@@ -1,74 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="aloubier">
-        <meta name="description" content="Learn more about me!">
-        <title>42 Projects - Alexis Loubiere - Inception</title>
-        <link rel="icon" href="42_Logo.svg" type="image/svg+xml">
-        <link rel="stylesheet" href="main.css" type="text/css">
-        <script src="https://unpkg.com/htmx.org@1.9.11"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="name">
-                <a href="index.html">Alexis Loubiere</a>
-                <p>Student @42Paris</p>
-            </div>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="42.html">42</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="page-title">
-            <h1><strong>42 Paris</strong></h1>
-            <p>Here are some cool project I have done at 42Paris</p>
-        </section>
-        <hr>
-        <section>
-        <div class="projects">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="aloubier" />
+    <meta name="description" content="Learn more about me!" />
+    <title>42 Projects - Alexis Loubiere - Inception</title>
+    <link rel="icon" href="42_Logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="name">
+        <a href="index.html">Alexis Loubiere</a>
+        <p>Student @42Paris</p>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="42.html">42</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="page-title">
+      <h1><strong>42 Paris</strong></h1>
+      <p>Here are some cool project I have done at 42Paris</p>
+    </section>
+    <hr />
+    <section>
+      <div class="projects">
         <h2>Minishell</h2>
         <p>
-            A shell written in C with a 'limited' feature set based on bash. In this project, I learned a lot about how to work with the system calls. A shell being very close to the kernel allowed to learn in detail how to use signals and how to make a resilient application. One of the hardest part of this project was the handling of the user input, being unpredictable at runtime, it is of the utmost importance that we do not allow any surface of attack allowing a user to break the program. All in all, it was a very good learning experience.
+          A shell written in C with a feature set inspired by bash. This project
+          provided invaluable experience in working with system calls and
+          understanding their interactions with the kernel. Developing Minishell
+          allowed me to dive deep into signal handling, process management, and
+          the creation of a resilient application capable of withstanding
+          various runtime scenarios. One of the most challenging aspects was
+          handling user input, which is inherently unpredictable. Ensuring that
+          the shell was secure against potential attack vectors required
+          meticulous attention to detail and robust error handling. This project
+          was an excellent learning experience, enhancing my skills in low-level
+          programming and system-level operations.
         </p>
+
         <h2>cub3D</h2>
-        <p>A project implementing raycasting in C reminiscent of the old Wolfenstein</p>
+        <p>
+          A project implementing raycasting in C, reminiscent of the classic
+          game Wolfenstein 3D. This engaging project involved creating a basic
+          3D graphics engine using the minilibX library, allowing me to handle
+          real-time rendering and graphical computations. Through cub3D, I
+          gained a deeper understanding of the mathematical concepts behind
+          raycasting and the techniques used in game development, such as
+          handling different events and optimizing performance. This project was
+          particularly rewarding as it combined my interest in graphics with
+          practical programming skills, providing a solid foundation in both
+          areas.
+        </p>
+
         <h2>Inception</h2>
-        <p>Learning the basics of containers and their deployment using Docker.
-            <br>The project with its bonus allows us to learn how to set up several services such as:
+        <p>
+          A project focused on learning the fundamentals of containerization and
+          deployment using Docker. Through Inception, I explored the process of
+          setting up and managing multiple services within containers, gaining
+          hands-on experience with Docker's capabilities. The project, along
+          with its bonus tasks, required configuring various services, such as
+          web servers, databases, and application servers, to work seamlessly
+          together in a containerized environment. This experience was
+          instrumental in understanding the principles of DevOps and the
+          importance of scalable, isolated application environments. The project
+          also emphasized the practical aspects of container orchestration and
+          management. In this project I also learned to setup those services.
         </p>
         <ul>
-            <li>A WordPress service with redis cache</li>
-            <li>Adminer for WordPress</li>
-            <li>CAdvisor to monitor the containers usage</li>
-            <li>A MariaDB database</li>
-            <li>A Nginx server</li>
-            <li>A static website written in HTML with CSS hosted on an Nginx subdomain</li>
-
+          <li>A WordPress service with redis cache</li>
+          <li>Adminer for WordPress</li>
+          <li>CAdvisor to monitor the containers usage</li>
+          <li>A MariaDB database</li>
+          <li>A Nginx server</li>
+          <li>
+            A static website written in HTML with CSS hosted on an Nginx
+            subdomain
+          </li>
         </ul>
-        </div>
-        </section>
-        <hr>
-        <footer class="footer">
-            <div>
-                <p>Email</p>
-                <p class="link">alex.loubiere@gmail.com</p>
-            </div>
-            <div>
-                <p>Intra</p>
-                <a class="link" href="https://profile.intra.42.fr/users/aloubier">aloubier</a>
-            </div>
-            <div>
-                <p>Github</p>
-                <a class="link" href="https://github.com/mkps">mkps@github.com</a>
-            </div>
-            <div>
-                <p>&copy;&nbsp;Made by Alexis Loubiere</p>
-            </div>
-        </footer>
-    </body>
- </html>
+      </div>
+    </section>
+    <hr />
+    <footer class="footer">
+      <div>
+        <p>Email</p>
+        <p class="link">alex.loubiere@gmail.com</p>
+      </div>
+      <div>
+        <p>Intra</p>
+        <a class="link" href="https://profile.intra.42.fr/users/aloubier"
+          >aloubier</a
+        >
+      </div>
+      <div>
+        <p>Github</p>
+        <a class="link" href="https://github.com/mkps">mkps@github.com</a>
+      </div>
+      <div>
+        <p>&copy;&nbsp;Made by Alexis Loubiere</p>
+      </div>
+    </footer>
+  </body>
+</html>
