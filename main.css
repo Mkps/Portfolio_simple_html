@@ -22,7 +22,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px; /* Optional: Add padding */
-  border-bottom: 1px solid #ccc; /* Optional: Add a bottom border */
 }
 .header .name {
   display: flex;
@@ -67,6 +66,17 @@ body {
 }
 .footer div {
   padding: 10px; /* Optional: Add padding to each div */
+}
+
+.footer .link {
+    margin-left: 5%;
+    color: #3c1da0;
+    font-size: 1em;
+}
+
+.footer a {
+    text-decoration: none;
+
 }
 
 .img-container {
