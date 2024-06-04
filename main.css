@@ -8,12 +8,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+    --BGCOLOR: #f5f5f5;
+    --DFTCOLOR: #333;
+    --TITLECOLOR: rgb(10, 0, 155);
+    --LINKCOLOR: rgb(15, 7, 42);
+    --LINKHOVER: #64004b46;
+}
+
 body {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  background-color: whitesmoke;
-  color: #222;
+  background-color: var(--BGCOLOR);
+  color: var(--DFTCOLOR);
   min-height: 100vh;
 }
 
@@ -34,14 +43,14 @@ body {
   font-size: 1.5em; /* Optional: Adjust font size */
   font-weight: bold; /* Optional: Make text bold */
   text-decoration: none; /* Remove underline from links */
-  color: rgb(10, 0, 155);
+  color: var(--TITLECOLOR);
   /* Link color */
 }
 .header .name p {
-  font-size: 0.9em; /* Optional: Adjust font size */
+  font-size: 0.9em;
   padding-top: 10px;
-  text-decoration: none; /* Remove underline from links */
-  color: rgb(15, 7, 42); /* Link color */
+  text-decoration: none;
+  color: var(--LINKCOLOR);
 }
 .header .nav-links ul {
   display: flex;
@@ -50,11 +59,11 @@ body {
 }
 .header .nav-links ul a {
   text-decoration: none; /* Remove underline from links */
-  color: #150742; /* Link color */
+  color: var(--LINKCOLOR); /* Link color */
   font-size: 1em; /* Optional: Adjust font size */
 }
 .header .nav-links a:hover {
-  color: #61114d46; /* Optional: Link color on hover */
+  color: var(--LINKHOVER); /* Optional: Link color on hover */
 }
 
 .footer {
@@ -64,19 +73,24 @@ body {
   overflow: auto;
   padding: 10px; /* Optional: Add padding */
 }
+
 .footer div {
   padding: 10px; /* Optional: Add padding to each div */
 }
 
 .footer .link {
   margin-left: 5%;
-  color: #3c1da0;
+  color: var(--LINKCOLOR);
   font-size: 1em;
 }
 
 .footer a {
   text-decoration: none;
 }
+
+.footer a:hover {
+    color: var(--LINKHOVER); /* Optional: Link color on hover */
+  }
 
 .img-container {
   display: flex;
@@ -94,16 +108,26 @@ body {
   margin-left: 20%;
 }
 .img-container .text {
+  padding: 0 3%;
   text-align: center;
   flex: 1;
 }
-.img-container .text h1 {
-  margin: 0;
+.img-container .text h2 {
   font-size: 2em;
+  text-decoration: underline;
 }
+
 .img-container .text p {
   margin: 10px 0 0;
 }
+
+.cta {
+    text-align: center;
+    margin: 10px 0 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 .page-title {
   text-align: center;
 }
@@ -173,7 +197,7 @@ body {
   font-size: 0.9em; /* Smaller font for descriptions */
   font-style: italic; /* Italic text */
   margin: 5px 0 0 0; /* Small margin at the top */
-  color: #666; /* Optional: Lighter color for descriptions */
+  color: #777777; /* Optional: Lighter color for descriptions */
 }
 .skills ul {
   text-align: left;
@@ -198,24 +222,28 @@ body {
   margin-bottom: 20px;
   margin-left: 20%;
 
-  font-size: 2em;
+  font-size: 1.6em;
+  text-decoration: underline;
+
 }
 
 .contact {
   display: block;
   width: 80%;
   margin: 20px auto;
+  margin-bottom: 2%;
   padding: 20px;
 }
 
 .contact fieldset {
   text-align: left;
   background-color: whitesmoke;
+  padding-bottom: 2%;
 }
 
 .contact legend {
   padding: 12px;
-  margin-left: calc(25% - 35px - 8px);
+  margin-left: calc(15% - 35px - 8px);
   font-size: 20px;
   text-transform: capitalize;
 }
@@ -237,6 +265,7 @@ body {
 }
 .contact button {
   margin: 4px 2px;
+  margin-top: 1%;
   margin-left: 5%;
   font-size: 0.8em;
   padding: 6px 12px;
